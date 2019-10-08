@@ -1,15 +1,15 @@
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
 
-#include "snake.h"
+#include "player.h"
+#include "challenge.h"
+#include "parallax.h"
+#include "keys.h"
+#include "state.h"
 
 class Controller {
  public:
-  void HandleInput(bool &running, Snake &snake) const;
-
- private:
-  void ChangeDirection(Snake &snake, Snake::Direction input,
-                       Snake::Direction opposite) const;
+  void HandleInput(State &state) const;
 };
 
 #endif

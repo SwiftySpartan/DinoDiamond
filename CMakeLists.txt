@@ -12,6 +12,6 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS} src)
 
-add_executable(SnakeGame src/main.cpp src/game.cpp src/controller.cpp src/renderer.cpp src/snake.cpp)
+add_executable(DinoDiamond src/state.cpp src/main.cpp src/game.cpp src/controller.cpp src/renderer.cpp src/parallax.cpp src/player.cpp src/challenge.cpp src/diamond.cpp)
 string(STRIP ${SDL2_LIBRARIES} SDL2_LIBRARIES)
-target_link_libraries(SnakeGame ${SDL2_LIBRARIES})
+target_link_libraries(DinoDiamond ${SDL2_LIBRARIES} SDL2_image SDL2_mixer)

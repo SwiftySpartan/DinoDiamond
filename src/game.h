@@ -1,33 +1,34 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <random>
-#include "SDL.h"
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_mixer.h>
+
 #include "controller.h"
+#include "diamond.h"
+#include "player.h"
 #include "renderer.h"
-#include "snake.h"
 
 class Game {
  public:
-  Game(std::size_t grid_width, std::size_t grid_height);
+  Game(std::size_t screen_width, std::size_t screen_height,
+			 std::size_t grid_width, std::size_t grid_height);
   void Run(Controller const &controller, Renderer &renderer,
-           std::size_t target_frame_duration);
+           std::size_t target_frame_duration, int previous_score);
   int GetScore() const;
   int GetSize() const;
 
- private:
-  Snake snake;
-  SDL_Point food;
+	void Detect(Mix_Chunk &diamond_sf, State &state) const;
 
-  std::random_device dev;
-  std::mt19937 engine;
-  std::uniform_int_distribution<int> random_w;
-  std::uniform_int_distribution<int> random_h;
+ private:
+	Player player;
 
   int score{0};
 
-  void PlaceFood();
-  void Update();
+	std::vector<Parallax> backgrounds;
+	std::vector<Diamond> diamonds;
+
+  void Update(Mix_Chunk &diamond_sf, State &state);
 };
 
 #endif

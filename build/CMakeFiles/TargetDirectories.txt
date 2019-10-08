@@ -1,0 +1,3 @@
+/Users/andreww/Development/capstone/build/CMakeFiles/rebuild_cache.dir
+/Users/andreww/Development/capstone/build/CMakeFiles/edit_cache.dir
+/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir

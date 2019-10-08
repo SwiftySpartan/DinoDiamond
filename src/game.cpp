@@ -1,31 +1,53 @@
-#include "game.h"
 #include <iostream>
-#include "SDL.h"
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_mixer.h>
 
-Game::Game(std::size_t grid_width, std::size_t grid_height)
-    : snake(grid_width, grid_height),
-      engine(dev()),
-      random_w(0, static_cast<int>(grid_width)),
-      random_h(0, static_cast<int>(grid_height)) {
-  PlaceFood();
+#include "game.h"
+#include "state.h"
+
+Game::Game(std::size_t screen_width, std::size_t screen_height,
+			 std::size_t grid_width, std::size_t grid_height)
+    : player(static_cast<int>(screen_width), static_cast<int>(screen_height), screen_height * 0.5, screen_height * 0.69)
+{
+	// add all background parallaxes
+	backgrounds.push_back(Parallax(screen_width, screen_height, 2.5));
+	backgrounds.push_back(Parallax(screen_width, screen_height, 1.6));
+	backgrounds.push_back(Parallax(screen_width, screen_height, 0.8));
+	backgrounds.push_back(Parallax(screen_width, screen_height, 0.4));
+	backgrounds.push_back(Parallax(screen_width, screen_height, 0.2));
+
+	diamonds.push_back(Diamond(50, screen_height * 0.69 + 30, 2.5));
 }
 
 void Game::Run(Controller const &controller, Renderer &renderer,
-               std::size_t target_frame_duration) {
+               std::size_t target_frame_duration, int previous_score) {
   Uint32 title_timestamp = SDL_GetTicks();
   Uint32 frame_start;
   Uint32 frame_end;
   Uint32 frame_duration;
   int frame_count = 0;
-  bool running = true;
 
-  while (running) {
+	Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048);
+
+	Mix_Music * background_music = Mix_LoadMUS("../assets/background_music.wav");
+	Mix_Chunk * diamond_sf = Mix_LoadWAV("../assets/sound_01.wav");
+	Mix_PlayMusic(background_music, 0);
+
+	State state = State();
+
+	// state.SetPlayer(&player);
+	state.SetBackgrounds(&backgrounds);
+	state.SetPlayer(&player);
+	state.SetDiamonds(&diamonds);
+	state.SetRunningStatus(true);
+
+  while (state.GetRunningStatus()) {
     frame_start = SDL_GetTicks();
 
     // Input, Update, Render - the main game loop.
-    controller.HandleInput(running, snake);
-    Update();
-    renderer.Render(snake, food);
+    controller.HandleInput(state);
+    Update(*diamond_sf, state);
+    renderer.Render(state);
 
     frame_end = SDL_GetTicks();
 
@@ -36,7 +58,7 @@ void Game::Run(Controller const &controller, Renderer &renderer,
 
     // After every second, update the window title.
     if (frame_end - title_timestamp >= 1000) {
-      renderer.UpdateWindowTitle(score, frame_count);
+      renderer.UpdateWindowTitle(player.consume_score, state.GetLevel(), previous_score, frame_count);
       frame_count = 0;
       title_timestamp = frame_end;
     }
@@ -48,40 +70,53 @@ void Game::Run(Controller const &controller, Renderer &renderer,
       SDL_Delay(target_frame_duration - frame_duration);
     }
   }
+
+	Mix_FreeMusic(background_music);
 }
 
-void Game::PlaceFood() {
-  int x, y;
-  while (true) {
-    x = random_w(engine);
-    y = random_h(engine);
-    // Check that the location is not occupied by a snake item before placing
-    // food.
-    if (!snake.SnakeCell(x, y)) {
-      food.x = x;
-      food.y = y;
-      return;
-    }
-  }
+void Game::Update(Mix_Chunk &diamond_sf, State &state) {
+	if (!player.alive) return;
+
+	// update player
+	state.GetPlayer()->SetAction(state.GetKeysPressed(), state.GetPreviousKeysPressed());
+	state.GetPlayer()->Update();
+
+  // update diamonds
+	for (size_t i = 0; i < state.GetDiamonds().size(); i++) {
+		state.GetDiamonds()[i].SetDirection(state.GetKeysPressed(), state.GetPreviousKeysPressed());
+		state.GetDiamonds()[i].Update();
+	}
+
+  // update fires
+
+	// update backgrounds
+	for (size_t i = 0; i < state.GetBackgrounds().size(); i++) {
+		state.GetBackgrounds()[i].SetDirection(state.GetKeysPressed(), state.GetPreviousKeysPressed());
+		state.GetBackgrounds()[i].Update();
+	}
+
+	Detect(diamond_sf, state);
 }
 
-void Game::Update() {
-  if (!snake.alive) return;
+int Game::GetScore() const { return player.consume_score; }
+int Game::GetSize() const { return 1; }
 
-  snake.Update();
+void Game::Detect(Mix_Chunk &diamond_sf, State &state) const {
 
-  int new_x = static_cast<int>(snake.head_x);
-  int new_y = static_cast<int>(snake.head_y);
+	for (size_t i = 0; i < state.GetDiamonds().size(); i++)
+		{
+			bool collision = state.GetPlayer()->PlayerCell(state.GetDiamonds()[i].GetX(), state.GetDiamonds()[i].GetY());
 
-  // Check if there's food over here
-  if (food.x == new_x && food.y == new_y) {
-    score++;
-    PlaceFood();
-    // Grow snake and increase speed.
-    snake.GrowBody();
-    snake.speed += 0.02;
-  }
+			if (collision && state.GetDiamonds()[i].GetChallengeType() == ChallengeType::BENEFICIAL) {
+				Mix_PlayChannel(-1, &diamond_sf, 0);
+
+				state.GetDiamonds().erase(state.GetDiamonds().begin() + i);
+				state.GetPlayer()->consume_score += 1;
+				if (state.GetDiamonds().size() == 0) {
+					state.SetLevel(state.GetLevel() + 1);
+				}
+			} else if (collision && state.GetDiamonds()[i].GetChallengeType() == ChallengeType::DETRIMENTAL) {
+				state.GetPlayer()->Die();
+			}
+		}
 }
-
-int Game::GetScore() const { return score; }
-int Game::GetSize() const { return snake.size; }
