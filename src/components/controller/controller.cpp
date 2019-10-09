@@ -6,6 +6,10 @@ void Controller::HandleInput(State &state) const {
     if (e.type == SDL_QUIT) {
       state.SetRunningStatus(false);
     } else if (e.type == SDL_KEYDOWN) {
+			if (e.key.keysym.sym == SDLK_r) {
+				std::cout << "restart game" << std::endl;
+			}
+
 			if (!state.GetPlayer().alive) {
 				return;
 			}
@@ -19,6 +23,7 @@ void Controller::HandleInput(State &state) const {
 
         case SDLK_UP:
 					state.SetKeysPressed(KeysPressed::keyJump);
+					state.GetPlayer().SetIsJumping(false);
           break;
 
         case SDLK_DOWN:
@@ -27,6 +32,7 @@ void Controller::HandleInput(State &state) const {
 
 				case SDLK_SPACE:
 					state.SetKeysPressed(KeysPressed::keyJump);
+					state.GetPlayer().SetIsJumping(false);
           break;
 
         case SDLK_LEFT:

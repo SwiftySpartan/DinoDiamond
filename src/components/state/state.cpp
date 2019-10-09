@@ -15,25 +15,67 @@ void State::GenerateChallenges() {
 }
 
 void State::GenerateDiamonds(std::promise<std::vector<Diamond>> && promise) {
-		std::vector<Diamond> d = {
-			Diamond(800, 650, 2.5),
-			Diamond(1400, 650, 2.5),
-			Diamond(1700, 650, 2.5),
-			Diamond(2100, 650, 2.5),
-			Diamond(2700, 650, 2.5),
-			Diamond(2900, 650, 2.5) };
+		if (GetLevel() == 1) {
+			// Level 1 diamonds
+			std::vector<Diamond> d = {
+				Diamond(800, 650, 2.5)
+			};
+    	promise.set_value(d);
 
-    promise.set_value(d);
+		} else if (GetLevel() == 2) {
+
+			std::vector<Diamond> d = {
+				Diamond(800, 650, 2.5),
+				Diamond(1400, 650, 2.5),
+				Diamond(1700, 650, 2.5),
+			};
+    	promise.set_value(d);
+
+		} else if (GetLevel() == 3) {
+
+			std::vector<Diamond> d = {
+				Diamond(2100, 650, 2.5),
+				Diamond(2700, 650, 2.5),
+				Diamond(2900, 650, 2.5)
+			};
+    	promise.set_value(d);
+
+		} else if (GetLevel() == 4) {
+
+			std::vector<Diamond> d = {
+				Diamond(800, 650, 2.5),
+				Diamond(1400, 650, 2.5),
+				Diamond(1700, 650, 2.5),
+				Diamond(2100, 650, 2.5),
+				Diamond(2700, 650, 2.5),
+				Diamond(2900, 650, 2.5)
+			};
+    	promise.set_value(d);
+
+		} else if (GetLevel() == 5) {
+
+			std::vector<Diamond> d = {
+				Diamond(800, 650, 2.5),
+				Diamond(1400, 650, 2.5),
+				Diamond(1700, 650, 2.5),
+				Diamond(2100, 650, 2.5),
+				Diamond(2700, 650, 2.5),
+				Diamond(2900, 650, 2.5)
+			};
+    	promise.set_value(d);
+
+		}
+
 }
 
 void State::GenerateFires(std::promise<std::vector<Fire>> && promise) {
 		std::vector<Fire> f = {
-			Fire(800, 650, 2.5),
-			Fire(1400, 650, 2.5),
-			Fire(1700, 650, 2.5),
-			Fire(2100, 650, 2.5),
-			Fire(2700, 650, 2.5),
-			Fire(2900, 650, 2.5) };
+			Fire(1100, 650, 2.5),
+			Fire(1150, 650, 2.5),
+			Fire(1600, 650, 2.5),
+			Fire(2300, 650, 2.5),
+			Fire(2500, 650, 2.5),
+			Fire(3100, 650, 2.5) };
     promise.set_value(f);
 }
 
@@ -68,6 +110,7 @@ void State::SetRunningStatus(bool const &running) {
 
 void State::SetLevel(int l) {
 	this->level = l;
+	GenerateChallenges();
 }
 
 // Getters

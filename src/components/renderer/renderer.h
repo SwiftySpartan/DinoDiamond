@@ -40,6 +40,8 @@ class Renderer {
 	SDL_Texture * sdl_texture_back_clouds_two;
 	SDL_Texture * sdl_texture_back_clouds_three;
 
+	SDL_Texture * sdl_texture_game_over;
+
   const std::size_t screen_width;
   const std::size_t screen_height;
   const std::size_t grid_width;

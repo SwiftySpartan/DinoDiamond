@@ -1,10 +1,8 @@
 #include "player.h"
 
 void Player::SetAction(KeysPressed key_KeysPressed, KeysPressed previous_key_KeysPressed) {
-	if (is_jumping || is_falling) {
-		return;
-	}
-
+	// store old action for resetting animations in other life cycles
+	previous_action = action;
 	switch (key_KeysPressed)
 	{
 	case KeysPressed::keyNone:
@@ -23,11 +21,9 @@ void Player::SetAction(KeysPressed key_KeysPressed, KeysPressed previous_key_Key
 		break;
 	case KeysPressed::keyLeft:
 		action = Action::kLeft;
-		previous_action = action;
 		break;
 	case KeysPressed::keyRight:
 		action = Action::kRight;
-		previous_action = action;
 		break;
 	case KeysPressed::keySprint:
 		if (previous_key_KeysPressed == KeysPressed::keyLeft) {
@@ -58,15 +54,7 @@ void Player::SetAction(KeysPressed key_KeysPressed, KeysPressed previous_key_Key
 
 void Player::Update() {
 	if (!alive) {
-		SetDied();
-	}
-
-	if (prevent_user_control && count_to_reset_animation > 0) {
-		count_to_reset_animation--;
-	}
-
-	if (prevent_user_control && count_to_reset_animation == 0) {
-		alive = false;
+		return;
 	}
 
   switch (action) {
@@ -182,41 +170,24 @@ void Player::SetDied() {
 }
 
 void Player::Jump() {
-	if (is_jumping) {
+	if (!is_jumping && jump_count == 0) {
+		is_jumping = true;
+		jump_count = 100;
+	} else if (is_jumping && jump_count == 0) {
+		SetWalking();
 		return;
 	}
 
-	if (count_to_reset_animation == 0) {
-		count_to_reset_animation -= jump_height * 3;
-	}
-
-	if (count_to_reset_animation > 0) {
-		count_to_reset_animation--;
-		y += 3;
-
-		if (count_to_reset_animation == 0) {
-			is_jumping = false;
-			is_falling = false;
-
-			if (!alive) {
-				return;
-			}
-			std::cout << "Set to walking again" << std::endl;
-		}
-	}
-
-	if (count_to_reset_animation < 0) {
-		count_to_reset_animation++;
-		y -= 6;
-
-		if (count_to_reset_animation == 0) {
-			count_to_reset_animation += jump_height * 6;
-			is_falling = true;
-		}
+	if (jump_count <= 50) {
+		y += 5;
+		jump_count--;
+	} else if (50 < jump_count && jump_count <= 100){
+		y -= 5;
+		jump_count--;
 	}
 }
 
 void Player::Die() {
 	SetDied();
-	prevent_user_control = true;
+	alive = false;
 }

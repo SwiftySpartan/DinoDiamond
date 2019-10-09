@@ -56,19 +56,20 @@ void Renderer::Render(State &state) {
 	state.GetBackgrounds()[0].RenderCopy(sdl_renderer, sdl_texture_trees);
 	state.GetBackgrounds()[0].RenderCopy(sdl_renderer, sdl_texture_ground);
 
-
 	for (size_t i = 0; i < state.GetDiamonds().size(); i++) {
 		state.GetDiamonds()[i].Render(sdl_renderer);
 	}
 
-	for (size_t i = 0; i < state.GetDiamonds().size(); i++) {
+	for (size_t i = 0; i < state.GetFires().size(); i++) {
 		state.GetFires()[i].Render(sdl_renderer);
 	}
 
 	state.GetPlayer().Render(sdl_renderer);
 
+	SDL_Rect r = { 0, 0, 1300, 900 };
+	SDL_RenderCopy(sdl_renderer, sdl_texture_game_over, &r, NULL);
+
   SDL_RenderPresent(sdl_renderer);
-	SDL_RenderClear(sdl_renderer);
 }
 
 void Renderer::UpdateWindowTitle(int score, int level, int previous_score, int fps) {
@@ -91,4 +92,6 @@ void Renderer::SetStage(SDL_Renderer * renderer) {
 	sdl_texture_back_clouds_one = SDL_CreateTextureFromSurface(renderer, IMG_Load("../assets/08_clouds.png"));
 	sdl_texture_back_clouds_two = SDL_CreateTextureFromSurface(renderer, IMG_Load("../assets/09_distant_clouds1.png"));
 	sdl_texture_back_clouds_three = SDL_CreateTextureFromSurface(renderer, IMG_Load("../assets/10_distant_clouds.png"));
+
+	sdl_texture_game_over = SDL_CreateTextureFromSurface(renderer, IMG_Load("../assets/game_over.png"));
 }

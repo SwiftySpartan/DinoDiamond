@@ -54,7 +54,8 @@ void Game::Run(Controller const &controller, Renderer &renderer,
 
     // After every second, update the window title.
     if (frame_end - title_timestamp >= 1000) {
-      renderer.UpdateWindowTitle(player.consume_score, state.GetLevel(), previous_score, frame_count);
+      renderer.UpdateWindowTitle(state.GetPlayer().consume_score, state.GetLevel(), previous_score, frame_count);
+			player.consume_score = state.GetPlayer().consume_score;
       frame_count = 0;
       title_timestamp = frame_end;
     }
@@ -109,7 +110,7 @@ void Game::Detect(Mix_Chunk &diamond_sf, State &state) const {
 		{
 			bool collision = state.GetPlayer().PlayerCell(state.GetDiamonds()[i].GetX(), state.GetDiamonds()[i].GetY());
 
-			if (collision && state.GetDiamonds()[i].GetChallengeType() == ChallengeType::BENEFICIAL) {
+			if (collision) {
 				Mix_PlayChannel(-1, &diamond_sf, 0);
 
 				state.GetDiamonds().erase(state.GetDiamonds().begin() + i);
@@ -117,8 +118,15 @@ void Game::Detect(Mix_Chunk &diamond_sf, State &state) const {
 				if (state.GetDiamonds().size() == 0) {
 					state.SetLevel(state.GetLevel() + 1);
 				}
-			} else if (collision && state.GetDiamonds()[i].GetChallengeType() == ChallengeType::DETRIMENTAL) {
+			}
+		}
+
+	for (size_t i = 0; i < state.GetFires().size(); i++)
+		{
+			bool collision = state.GetPlayer().PlayerCell(state.GetFires()[i].GetX(), state.GetFires()[i].GetY());
+			if (collision) {
 				state.GetPlayer().Die();
+				state.SetKeysPressed(KeysPressed::keyNone);
 			}
 		}
 }

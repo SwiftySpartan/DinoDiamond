@@ -46,41 +46,30 @@ Parallax is the class that provdes some abstraction to having a background that 
 
 `Classes abstract implementation details from their interfaces.` - parallax.cpp && player.cpp && challenge.cpp
 
-`Classes encapsulate behavior.` -
+`Classes encapsulate behavior.` -  all files except main.cpp
 
-`Classes follow an appropriate inheritance hierarchy.` -
+`Classes follow an appropriate inheritance hierarchy.` - diamond.h && fire.h
 
 `Overloaded functions allow the same function to operate on different parameters.` - challenge.h:14 && challenge.h:25
-
-`Derived class functions override virtual base class functions.` -
-
-`Templates generalize functions in the project.` -
 ```
 
 ### `Memory Management`
 ```
 `The project makes use of references in function declarations.`
 
-`The project uses destructors appropriately.`
+`The project uses destructors appropriately.` - Challenge.h
 
-`The project uses scope / Resource Acquisition Is Initialization (RAII) where appropriate.`
+`The project uses scope / Resource Acquisition Is Initialization (RAII) where appropriate.` - all files
 
-`The project follows the Rule of 5.`
-
-`The project uses move semantics to move data, instead of copying it, where possible.`
-
-`The project uses smart pointers instead of raw pointers.`
+`The project uses move semantics to move data, instead of copying it, where possible.` - state.cpp
 ```
 
 ### `Concurrency`
 ```
-`The project uses multithreading.`
+`The project uses multithreading.` - state.cpp
 
-`A promise and future is used in the project.`
+`A promise and future is used in the project.` - state.cpp
 
-`A mutex or lock is used in the project.`
-
-`A condition variable is used in the project.`
 ```
 
 

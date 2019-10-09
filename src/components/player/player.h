@@ -35,6 +35,10 @@ class Player {
 
 	void Die();
 
+	void SetIsJumping(bool jumping) {
+		this->is_jumping = jumping;
+	}
+
 	enum class Action { kUp, kNone, kLeft, kRight, kSprintLeft, kSprintRight, kJumpLeft, kJumpRight };
   Action action = Action::kNone;
 
@@ -67,11 +71,12 @@ class Player {
 
 	SDL_Rect srcrect;
 
-	bool is_falling;
-	bool is_jumping;
+	bool is_falling{false};
+	bool is_jumping{false};
 
 	bool prevent_user_control{false};
 
+	int jump_count{0};
 	int jump_height{10};
 
   int screen_width;
