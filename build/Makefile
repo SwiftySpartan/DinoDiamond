@@ -123,140 +123,248 @@ DinoDiamond/fast:
 	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/build
 .PHONY : DinoDiamond/fast
 
-src/challenge.o: src/challenge.cpp.o
+src/components/challenges/challenge.o: src/components/challenges/challenge.cpp.o
 
-.PHONY : src/challenge.o
-
-# target to build an object file
-src/challenge.cpp.o:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/challenge.cpp.o
-.PHONY : src/challenge.cpp.o
-
-src/challenge.i: src/challenge.cpp.i
-
-.PHONY : src/challenge.i
-
-# target to preprocess a source file
-src/challenge.cpp.i:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/challenge.cpp.i
-.PHONY : src/challenge.cpp.i
-
-src/challenge.s: src/challenge.cpp.s
-
-.PHONY : src/challenge.s
-
-# target to generate assembly for a file
-src/challenge.cpp.s:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/challenge.cpp.s
-.PHONY : src/challenge.cpp.s
-
-src/controller.o: src/controller.cpp.o
-
-.PHONY : src/controller.o
+.PHONY : src/components/challenges/challenge.o
 
 # target to build an object file
-src/controller.cpp.o:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/controller.cpp.o
-.PHONY : src/controller.cpp.o
+src/components/challenges/challenge.cpp.o:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.o
+.PHONY : src/components/challenges/challenge.cpp.o
 
-src/controller.i: src/controller.cpp.i
+src/components/challenges/challenge.i: src/components/challenges/challenge.cpp.i
 
-.PHONY : src/controller.i
+.PHONY : src/components/challenges/challenge.i
 
 # target to preprocess a source file
-src/controller.cpp.i:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/controller.cpp.i
-.PHONY : src/controller.cpp.i
+src/components/challenges/challenge.cpp.i:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.i
+.PHONY : src/components/challenges/challenge.cpp.i
 
-src/controller.s: src/controller.cpp.s
+src/components/challenges/challenge.s: src/components/challenges/challenge.cpp.s
 
-.PHONY : src/controller.s
+.PHONY : src/components/challenges/challenge.s
 
 # target to generate assembly for a file
-src/controller.cpp.s:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/controller.cpp.s
-.PHONY : src/controller.cpp.s
+src/components/challenges/challenge.cpp.s:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.s
+.PHONY : src/components/challenges/challenge.cpp.s
 
-src/diamond.o: src/diamond.cpp.o
+src/components/challenges/diamonds/diamond.o: src/components/challenges/diamonds/diamond.cpp.o
 
-.PHONY : src/diamond.o
+.PHONY : src/components/challenges/diamonds/diamond.o
 
 # target to build an object file
-src/diamond.cpp.o:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/diamond.cpp.o
-.PHONY : src/diamond.cpp.o
+src/components/challenges/diamonds/diamond.cpp.o:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.o
+.PHONY : src/components/challenges/diamonds/diamond.cpp.o
 
-src/diamond.i: src/diamond.cpp.i
+src/components/challenges/diamonds/diamond.i: src/components/challenges/diamonds/diamond.cpp.i
 
-.PHONY : src/diamond.i
+.PHONY : src/components/challenges/diamonds/diamond.i
 
 # target to preprocess a source file
-src/diamond.cpp.i:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/diamond.cpp.i
-.PHONY : src/diamond.cpp.i
+src/components/challenges/diamonds/diamond.cpp.i:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.i
+.PHONY : src/components/challenges/diamonds/diamond.cpp.i
 
-src/diamond.s: src/diamond.cpp.s
+src/components/challenges/diamonds/diamond.s: src/components/challenges/diamonds/diamond.cpp.s
 
-.PHONY : src/diamond.s
+.PHONY : src/components/challenges/diamonds/diamond.s
 
 # target to generate assembly for a file
-src/diamond.cpp.s:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/diamond.cpp.s
-.PHONY : src/diamond.cpp.s
+src/components/challenges/diamonds/diamond.cpp.s:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.s
+.PHONY : src/components/challenges/diamonds/diamond.cpp.s
 
-src/fire.o: src/fire.cpp.o
+src/components/challenges/fires/fire.o: src/components/challenges/fires/fire.cpp.o
 
-.PHONY : src/fire.o
+.PHONY : src/components/challenges/fires/fire.o
 
 # target to build an object file
-src/fire.cpp.o:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/fire.cpp.o
-.PHONY : src/fire.cpp.o
+src/components/challenges/fires/fire.cpp.o:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.o
+.PHONY : src/components/challenges/fires/fire.cpp.o
 
-src/fire.i: src/fire.cpp.i
+src/components/challenges/fires/fire.i: src/components/challenges/fires/fire.cpp.i
 
-.PHONY : src/fire.i
+.PHONY : src/components/challenges/fires/fire.i
 
 # target to preprocess a source file
-src/fire.cpp.i:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/fire.cpp.i
-.PHONY : src/fire.cpp.i
+src/components/challenges/fires/fire.cpp.i:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.i
+.PHONY : src/components/challenges/fires/fire.cpp.i
 
-src/fire.s: src/fire.cpp.s
+src/components/challenges/fires/fire.s: src/components/challenges/fires/fire.cpp.s
 
-.PHONY : src/fire.s
+.PHONY : src/components/challenges/fires/fire.s
 
 # target to generate assembly for a file
-src/fire.cpp.s:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/fire.cpp.s
-.PHONY : src/fire.cpp.s
+src/components/challenges/fires/fire.cpp.s:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.s
+.PHONY : src/components/challenges/fires/fire.cpp.s
 
-src/game.o: src/game.cpp.o
+src/components/controller/controller.o: src/components/controller/controller.cpp.o
 
-.PHONY : src/game.o
+.PHONY : src/components/controller/controller.o
 
 # target to build an object file
-src/game.cpp.o:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/game.cpp.o
-.PHONY : src/game.cpp.o
+src/components/controller/controller.cpp.o:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.o
+.PHONY : src/components/controller/controller.cpp.o
 
-src/game.i: src/game.cpp.i
+src/components/controller/controller.i: src/components/controller/controller.cpp.i
 
-.PHONY : src/game.i
+.PHONY : src/components/controller/controller.i
 
 # target to preprocess a source file
-src/game.cpp.i:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/game.cpp.i
-.PHONY : src/game.cpp.i
+src/components/controller/controller.cpp.i:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.i
+.PHONY : src/components/controller/controller.cpp.i
 
-src/game.s: src/game.cpp.s
+src/components/controller/controller.s: src/components/controller/controller.cpp.s
 
-.PHONY : src/game.s
+.PHONY : src/components/controller/controller.s
 
 # target to generate assembly for a file
-src/game.cpp.s:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/game.cpp.s
-.PHONY : src/game.cpp.s
+src/components/controller/controller.cpp.s:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.s
+.PHONY : src/components/controller/controller.cpp.s
+
+src/components/game/game.o: src/components/game/game.cpp.o
+
+.PHONY : src/components/game/game.o
+
+# target to build an object file
+src/components/game/game.cpp.o:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.o
+.PHONY : src/components/game/game.cpp.o
+
+src/components/game/game.i: src/components/game/game.cpp.i
+
+.PHONY : src/components/game/game.i
+
+# target to preprocess a source file
+src/components/game/game.cpp.i:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.i
+.PHONY : src/components/game/game.cpp.i
+
+src/components/game/game.s: src/components/game/game.cpp.s
+
+.PHONY : src/components/game/game.s
+
+# target to generate assembly for a file
+src/components/game/game.cpp.s:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.s
+.PHONY : src/components/game/game.cpp.s
+
+src/components/parallax/parallax.o: src/components/parallax/parallax.cpp.o
+
+.PHONY : src/components/parallax/parallax.o
+
+# target to build an object file
+src/components/parallax/parallax.cpp.o:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.o
+.PHONY : src/components/parallax/parallax.cpp.o
+
+src/components/parallax/parallax.i: src/components/parallax/parallax.cpp.i
+
+.PHONY : src/components/parallax/parallax.i
+
+# target to preprocess a source file
+src/components/parallax/parallax.cpp.i:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.i
+.PHONY : src/components/parallax/parallax.cpp.i
+
+src/components/parallax/parallax.s: src/components/parallax/parallax.cpp.s
+
+.PHONY : src/components/parallax/parallax.s
+
+# target to generate assembly for a file
+src/components/parallax/parallax.cpp.s:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.s
+.PHONY : src/components/parallax/parallax.cpp.s
+
+src/components/player/player.o: src/components/player/player.cpp.o
+
+.PHONY : src/components/player/player.o
+
+# target to build an object file
+src/components/player/player.cpp.o:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.o
+.PHONY : src/components/player/player.cpp.o
+
+src/components/player/player.i: src/components/player/player.cpp.i
+
+.PHONY : src/components/player/player.i
+
+# target to preprocess a source file
+src/components/player/player.cpp.i:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.i
+.PHONY : src/components/player/player.cpp.i
+
+src/components/player/player.s: src/components/player/player.cpp.s
+
+.PHONY : src/components/player/player.s
+
+# target to generate assembly for a file
+src/components/player/player.cpp.s:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.s
+.PHONY : src/components/player/player.cpp.s
+
+src/components/renderer/renderer.o: src/components/renderer/renderer.cpp.o
+
+.PHONY : src/components/renderer/renderer.o
+
+# target to build an object file
+src/components/renderer/renderer.cpp.o:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.o
+.PHONY : src/components/renderer/renderer.cpp.o
+
+src/components/renderer/renderer.i: src/components/renderer/renderer.cpp.i
+
+.PHONY : src/components/renderer/renderer.i
+
+# target to preprocess a source file
+src/components/renderer/renderer.cpp.i:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.i
+.PHONY : src/components/renderer/renderer.cpp.i
+
+src/components/renderer/renderer.s: src/components/renderer/renderer.cpp.s
+
+.PHONY : src/components/renderer/renderer.s
+
+# target to generate assembly for a file
+src/components/renderer/renderer.cpp.s:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.s
+.PHONY : src/components/renderer/renderer.cpp.s
+
+src/components/state/state.o: src/components/state/state.cpp.o
+
+.PHONY : src/components/state/state.o
+
+# target to build an object file
+src/components/state/state.cpp.o:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.o
+.PHONY : src/components/state/state.cpp.o
+
+src/components/state/state.i: src/components/state/state.cpp.i
+
+.PHONY : src/components/state/state.i
+
+# target to preprocess a source file
+src/components/state/state.cpp.i:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.i
+.PHONY : src/components/state/state.cpp.i
+
+src/components/state/state.s: src/components/state/state.cpp.s
+
+.PHONY : src/components/state/state.s
+
+# target to generate assembly for a file
+src/components/state/state.cpp.s:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.s
+.PHONY : src/components/state/state.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -285,114 +393,6 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/parallax.o: src/parallax.cpp.o
-
-.PHONY : src/parallax.o
-
-# target to build an object file
-src/parallax.cpp.o:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/parallax.cpp.o
-.PHONY : src/parallax.cpp.o
-
-src/parallax.i: src/parallax.cpp.i
-
-.PHONY : src/parallax.i
-
-# target to preprocess a source file
-src/parallax.cpp.i:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/parallax.cpp.i
-.PHONY : src/parallax.cpp.i
-
-src/parallax.s: src/parallax.cpp.s
-
-.PHONY : src/parallax.s
-
-# target to generate assembly for a file
-src/parallax.cpp.s:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/parallax.cpp.s
-.PHONY : src/parallax.cpp.s
-
-src/player.o: src/player.cpp.o
-
-.PHONY : src/player.o
-
-# target to build an object file
-src/player.cpp.o:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/player.cpp.o
-.PHONY : src/player.cpp.o
-
-src/player.i: src/player.cpp.i
-
-.PHONY : src/player.i
-
-# target to preprocess a source file
-src/player.cpp.i:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/player.cpp.i
-.PHONY : src/player.cpp.i
-
-src/player.s: src/player.cpp.s
-
-.PHONY : src/player.s
-
-# target to generate assembly for a file
-src/player.cpp.s:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/player.cpp.s
-.PHONY : src/player.cpp.s
-
-src/renderer.o: src/renderer.cpp.o
-
-.PHONY : src/renderer.o
-
-# target to build an object file
-src/renderer.cpp.o:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o
-.PHONY : src/renderer.cpp.o
-
-src/renderer.i: src/renderer.cpp.i
-
-.PHONY : src/renderer.i
-
-# target to preprocess a source file
-src/renderer.cpp.i:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/renderer.cpp.i
-.PHONY : src/renderer.cpp.i
-
-src/renderer.s: src/renderer.cpp.s
-
-.PHONY : src/renderer.s
-
-# target to generate assembly for a file
-src/renderer.cpp.s:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/renderer.cpp.s
-.PHONY : src/renderer.cpp.s
-
-src/state.o: src/state.cpp.o
-
-.PHONY : src/state.o
-
-# target to build an object file
-src/state.cpp.o:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/state.cpp.o
-.PHONY : src/state.cpp.o
-
-src/state.i: src/state.cpp.i
-
-.PHONY : src/state.i
-
-# target to preprocess a source file
-src/state.cpp.i:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/state.cpp.i
-.PHONY : src/state.cpp.i
-
-src/state.s: src/state.cpp.s
-
-.PHONY : src/state.s
-
-# target to generate assembly for a file
-src/state.cpp.s:
-	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/state.cpp.s
-.PHONY : src/state.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -402,36 +402,36 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DinoDiamond"
-	@echo "... src/challenge.o"
-	@echo "... src/challenge.i"
-	@echo "... src/challenge.s"
-	@echo "... src/controller.o"
-	@echo "... src/controller.i"
-	@echo "... src/controller.s"
-	@echo "... src/diamond.o"
-	@echo "... src/diamond.i"
-	@echo "... src/diamond.s"
-	@echo "... src/fire.o"
-	@echo "... src/fire.i"
-	@echo "... src/fire.s"
-	@echo "... src/game.o"
-	@echo "... src/game.i"
-	@echo "... src/game.s"
+	@echo "... src/components/challenges/challenge.o"
+	@echo "... src/components/challenges/challenge.i"
+	@echo "... src/components/challenges/challenge.s"
+	@echo "... src/components/challenges/diamonds/diamond.o"
+	@echo "... src/components/challenges/diamonds/diamond.i"
+	@echo "... src/components/challenges/diamonds/diamond.s"
+	@echo "... src/components/challenges/fires/fire.o"
+	@echo "... src/components/challenges/fires/fire.i"
+	@echo "... src/components/challenges/fires/fire.s"
+	@echo "... src/components/controller/controller.o"
+	@echo "... src/components/controller/controller.i"
+	@echo "... src/components/controller/controller.s"
+	@echo "... src/components/game/game.o"
+	@echo "... src/components/game/game.i"
+	@echo "... src/components/game/game.s"
+	@echo "... src/components/parallax/parallax.o"
+	@echo "... src/components/parallax/parallax.i"
+	@echo "... src/components/parallax/parallax.s"
+	@echo "... src/components/player/player.o"
+	@echo "... src/components/player/player.i"
+	@echo "... src/components/player/player.s"
+	@echo "... src/components/renderer/renderer.o"
+	@echo "... src/components/renderer/renderer.i"
+	@echo "... src/components/renderer/renderer.s"
+	@echo "... src/components/state/state.o"
+	@echo "... src/components/state/state.i"
+	@echo "... src/components/state/state.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/parallax.o"
-	@echo "... src/parallax.i"
-	@echo "... src/parallax.s"
-	@echo "... src/player.o"
-	@echo "... src/player.i"
-	@echo "... src/player.s"
-	@echo "... src/renderer.o"
-	@echo "... src/renderer.i"
-	@echo "... src/renderer.s"
-	@echo "... src/state.o"
-	@echo "... src/state.i"
-	@echo "... src/state.s"
 .PHONY : help
 
 

@@ -2,9 +2,9 @@
 #include <fstream>
 #include <string>
 
-#include "controller.h"
-#include "game.h"
-#include "renderer.h"
+#include "components/controller/controller.h"
+#include "components/game/game.h"
+#include "components/renderer/renderer.h"
 
 
 int main() {

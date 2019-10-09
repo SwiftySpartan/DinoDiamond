@@ -57,18 +57,18 @@ include CMakeFiles/DinoDiamond.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DinoDiamond.dir/flags.make
 
-CMakeFiles/DinoDiamond.dir/src/state.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
-CMakeFiles/DinoDiamond.dir/src/state.cpp.o: ../src/state.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DinoDiamond.dir/src/state.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/state.cpp.o -c /Users/andreww/Development/capstone/src/state.cpp
+CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
+CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.o: ../src/components/state/state.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.o -c /Users/andreww/Development/capstone/src/components/state/state.cpp
 
-CMakeFiles/DinoDiamond.dir/src/state.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/state.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/state.cpp > CMakeFiles/DinoDiamond.dir/src/state.cpp.i
+CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/components/state/state.cpp > CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.i
 
-CMakeFiles/DinoDiamond.dir/src/state.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/state.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/state.cpp -o CMakeFiles/DinoDiamond.dir/src/state.cpp.s
+CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/components/state/state.cpp -o CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.s
 
 CMakeFiles/DinoDiamond.dir/src/main.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
 CMakeFiles/DinoDiamond.dir/src/main.cpp.o: ../src/main.cpp
@@ -83,136 +83,136 @@ CMakeFiles/DinoDiamond.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/main.cpp -o CMakeFiles/DinoDiamond.dir/src/main.cpp.s
 
-CMakeFiles/DinoDiamond.dir/src/game.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
-CMakeFiles/DinoDiamond.dir/src/game.cpp.o: ../src/game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DinoDiamond.dir/src/game.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/game.cpp.o -c /Users/andreww/Development/capstone/src/game.cpp
+CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
+CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.o: ../src/components/game/game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.o -c /Users/andreww/Development/capstone/src/components/game/game.cpp
 
-CMakeFiles/DinoDiamond.dir/src/game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/game.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/game.cpp > CMakeFiles/DinoDiamond.dir/src/game.cpp.i
+CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/components/game/game.cpp > CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.i
 
-CMakeFiles/DinoDiamond.dir/src/game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/game.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/game.cpp -o CMakeFiles/DinoDiamond.dir/src/game.cpp.s
+CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/components/game/game.cpp -o CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.s
 
-CMakeFiles/DinoDiamond.dir/src/controller.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
-CMakeFiles/DinoDiamond.dir/src/controller.cpp.o: ../src/controller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DinoDiamond.dir/src/controller.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/controller.cpp.o -c /Users/andreww/Development/capstone/src/controller.cpp
+CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
+CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.o: ../src/components/controller/controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.o -c /Users/andreww/Development/capstone/src/components/controller/controller.cpp
 
-CMakeFiles/DinoDiamond.dir/src/controller.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/controller.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/controller.cpp > CMakeFiles/DinoDiamond.dir/src/controller.cpp.i
+CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/components/controller/controller.cpp > CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.i
 
-CMakeFiles/DinoDiamond.dir/src/controller.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/controller.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/controller.cpp -o CMakeFiles/DinoDiamond.dir/src/controller.cpp.s
+CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/components/controller/controller.cpp -o CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.s
 
-CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
-CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o: ../src/renderer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o -c /Users/andreww/Development/capstone/src/renderer.cpp
+CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
+CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.o: ../src/components/renderer/renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.o -c /Users/andreww/Development/capstone/src/components/renderer/renderer.cpp
 
-CMakeFiles/DinoDiamond.dir/src/renderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/renderer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/renderer.cpp > CMakeFiles/DinoDiamond.dir/src/renderer.cpp.i
+CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/components/renderer/renderer.cpp > CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.i
 
-CMakeFiles/DinoDiamond.dir/src/renderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/renderer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/renderer.cpp -o CMakeFiles/DinoDiamond.dir/src/renderer.cpp.s
+CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/components/renderer/renderer.cpp -o CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.s
 
-CMakeFiles/DinoDiamond.dir/src/parallax.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
-CMakeFiles/DinoDiamond.dir/src/parallax.cpp.o: ../src/parallax.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DinoDiamond.dir/src/parallax.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/parallax.cpp.o -c /Users/andreww/Development/capstone/src/parallax.cpp
+CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
+CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.o: ../src/components/parallax/parallax.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.o -c /Users/andreww/Development/capstone/src/components/parallax/parallax.cpp
 
-CMakeFiles/DinoDiamond.dir/src/parallax.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/parallax.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/parallax.cpp > CMakeFiles/DinoDiamond.dir/src/parallax.cpp.i
+CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/components/parallax/parallax.cpp > CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.i
 
-CMakeFiles/DinoDiamond.dir/src/parallax.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/parallax.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/parallax.cpp -o CMakeFiles/DinoDiamond.dir/src/parallax.cpp.s
+CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/components/parallax/parallax.cpp -o CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.s
 
-CMakeFiles/DinoDiamond.dir/src/player.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
-CMakeFiles/DinoDiamond.dir/src/player.cpp.o: ../src/player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DinoDiamond.dir/src/player.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/player.cpp.o -c /Users/andreww/Development/capstone/src/player.cpp
+CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
+CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.o: ../src/components/player/player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.o -c /Users/andreww/Development/capstone/src/components/player/player.cpp
 
-CMakeFiles/DinoDiamond.dir/src/player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/player.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/player.cpp > CMakeFiles/DinoDiamond.dir/src/player.cpp.i
+CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/components/player/player.cpp > CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.i
 
-CMakeFiles/DinoDiamond.dir/src/player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/player.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/player.cpp -o CMakeFiles/DinoDiamond.dir/src/player.cpp.s
+CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/components/player/player.cpp -o CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.s
 
-CMakeFiles/DinoDiamond.dir/src/challenge.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
-CMakeFiles/DinoDiamond.dir/src/challenge.cpp.o: ../src/challenge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DinoDiamond.dir/src/challenge.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/challenge.cpp.o -c /Users/andreww/Development/capstone/src/challenge.cpp
+CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
+CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.o: ../src/components/challenges/challenge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.o -c /Users/andreww/Development/capstone/src/components/challenges/challenge.cpp
 
-CMakeFiles/DinoDiamond.dir/src/challenge.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/challenge.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/challenge.cpp > CMakeFiles/DinoDiamond.dir/src/challenge.cpp.i
+CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/components/challenges/challenge.cpp > CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.i
 
-CMakeFiles/DinoDiamond.dir/src/challenge.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/challenge.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/challenge.cpp -o CMakeFiles/DinoDiamond.dir/src/challenge.cpp.s
+CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/components/challenges/challenge.cpp -o CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.s
 
-CMakeFiles/DinoDiamond.dir/src/diamond.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
-CMakeFiles/DinoDiamond.dir/src/diamond.cpp.o: ../src/diamond.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DinoDiamond.dir/src/diamond.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/diamond.cpp.o -c /Users/andreww/Development/capstone/src/diamond.cpp
+CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
+CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.o: ../src/components/challenges/diamonds/diamond.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.o -c /Users/andreww/Development/capstone/src/components/challenges/diamonds/diamond.cpp
 
-CMakeFiles/DinoDiamond.dir/src/diamond.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/diamond.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/diamond.cpp > CMakeFiles/DinoDiamond.dir/src/diamond.cpp.i
+CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/components/challenges/diamonds/diamond.cpp > CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.i
 
-CMakeFiles/DinoDiamond.dir/src/diamond.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/diamond.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/diamond.cpp -o CMakeFiles/DinoDiamond.dir/src/diamond.cpp.s
+CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/components/challenges/diamonds/diamond.cpp -o CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.s
 
-CMakeFiles/DinoDiamond.dir/src/fire.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
-CMakeFiles/DinoDiamond.dir/src/fire.cpp.o: ../src/fire.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/DinoDiamond.dir/src/fire.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/fire.cpp.o -c /Users/andreww/Development/capstone/src/fire.cpp
+CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.o: CMakeFiles/DinoDiamond.dir/flags.make
+CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.o: ../src/components/challenges/fires/fire.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.o -c /Users/andreww/Development/capstone/src/components/challenges/fires/fire.cpp
 
-CMakeFiles/DinoDiamond.dir/src/fire.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/fire.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/fire.cpp > CMakeFiles/DinoDiamond.dir/src/fire.cpp.i
+CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andreww/Development/capstone/src/components/challenges/fires/fire.cpp > CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.i
 
-CMakeFiles/DinoDiamond.dir/src/fire.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/fire.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/fire.cpp -o CMakeFiles/DinoDiamond.dir/src/fire.cpp.s
+CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andreww/Development/capstone/src/components/challenges/fires/fire.cpp -o CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.s
 
 # Object files for target DinoDiamond
 DinoDiamond_OBJECTS = \
-"CMakeFiles/DinoDiamond.dir/src/state.cpp.o" \
+"CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.o" \
 "CMakeFiles/DinoDiamond.dir/src/main.cpp.o" \
-"CMakeFiles/DinoDiamond.dir/src/game.cpp.o" \
-"CMakeFiles/DinoDiamond.dir/src/controller.cpp.o" \
-"CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o" \
-"CMakeFiles/DinoDiamond.dir/src/parallax.cpp.o" \
-"CMakeFiles/DinoDiamond.dir/src/player.cpp.o" \
-"CMakeFiles/DinoDiamond.dir/src/challenge.cpp.o" \
-"CMakeFiles/DinoDiamond.dir/src/diamond.cpp.o" \
-"CMakeFiles/DinoDiamond.dir/src/fire.cpp.o"
+"CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.o" \
+"CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.o" \
+"CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.o" \
+"CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.o" \
+"CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.o" \
+"CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.o" \
+"CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.o" \
+"CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.o"
 
 # External object files for target DinoDiamond
 DinoDiamond_EXTERNAL_OBJECTS =
 
-DinoDiamond: CMakeFiles/DinoDiamond.dir/src/state.cpp.o
+DinoDiamond: CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.o
 DinoDiamond: CMakeFiles/DinoDiamond.dir/src/main.cpp.o
-DinoDiamond: CMakeFiles/DinoDiamond.dir/src/game.cpp.o
-DinoDiamond: CMakeFiles/DinoDiamond.dir/src/controller.cpp.o
-DinoDiamond: CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o
-DinoDiamond: CMakeFiles/DinoDiamond.dir/src/parallax.cpp.o
-DinoDiamond: CMakeFiles/DinoDiamond.dir/src/player.cpp.o
-DinoDiamond: CMakeFiles/DinoDiamond.dir/src/challenge.cpp.o
-DinoDiamond: CMakeFiles/DinoDiamond.dir/src/diamond.cpp.o
-DinoDiamond: CMakeFiles/DinoDiamond.dir/src/fire.cpp.o
+DinoDiamond: CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.o
+DinoDiamond: CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.o
+DinoDiamond: CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.o
+DinoDiamond: CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.o
+DinoDiamond: CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.o
+DinoDiamond: CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.o
+DinoDiamond: CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.o
+DinoDiamond: CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.o
 DinoDiamond: CMakeFiles/DinoDiamond.dir/build.make
 DinoDiamond: CMakeFiles/DinoDiamond.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/andreww/Development/capstone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable DinoDiamond"

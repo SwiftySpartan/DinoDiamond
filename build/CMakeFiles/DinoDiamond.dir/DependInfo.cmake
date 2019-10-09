@@ -4,16 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/andreww/Development/capstone/src/challenge.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/challenge.cpp.o"
-  "/Users/andreww/Development/capstone/src/controller.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/controller.cpp.o"
-  "/Users/andreww/Development/capstone/src/diamond.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/diamond.cpp.o"
-  "/Users/andreww/Development/capstone/src/fire.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/fire.cpp.o"
-  "/Users/andreww/Development/capstone/src/game.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/game.cpp.o"
+  "/Users/andreww/Development/capstone/src/components/challenges/challenge.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/components/challenges/challenge.cpp.o"
+  "/Users/andreww/Development/capstone/src/components/challenges/diamonds/diamond.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/components/challenges/diamonds/diamond.cpp.o"
+  "/Users/andreww/Development/capstone/src/components/challenges/fires/fire.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/components/challenges/fires/fire.cpp.o"
+  "/Users/andreww/Development/capstone/src/components/controller/controller.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/components/controller/controller.cpp.o"
+  "/Users/andreww/Development/capstone/src/components/game/game.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/components/game/game.cpp.o"
+  "/Users/andreww/Development/capstone/src/components/parallax/parallax.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/components/parallax/parallax.cpp.o"
+  "/Users/andreww/Development/capstone/src/components/player/player.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/components/player/player.cpp.o"
+  "/Users/andreww/Development/capstone/src/components/renderer/renderer.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/components/renderer/renderer.cpp.o"
+  "/Users/andreww/Development/capstone/src/components/state/state.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/components/state/state.cpp.o"
   "/Users/andreww/Development/capstone/src/main.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/main.cpp.o"
-  "/Users/andreww/Development/capstone/src/parallax.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/parallax.cpp.o"
-  "/Users/andreww/Development/capstone/src/player.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/player.cpp.o"
-  "/Users/andreww/Development/capstone/src/renderer.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o"
-  "/Users/andreww/Development/capstone/src/state.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/state.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
