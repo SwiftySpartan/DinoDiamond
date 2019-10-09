@@ -64,8 +64,13 @@ void Renderer::Render(State &state) {
 	state.GetBackgrounds()[0].RenderCopy(sdl_renderer, sdl_texture_trees);
 	state.GetBackgrounds()[0].RenderCopy(sdl_renderer, sdl_texture_ground);
 
-	if (state.GetDiamonds().size() > 0) {
-		state.GetDiamonds()[0].Render(sdl_renderer);
+
+	for (size_t i = 0; i < state.GetDiamonds().size(); i++) {
+		state.GetDiamonds()[i].Render(sdl_renderer);
+	}
+
+	if (state.GetFires().size() > 0) {
+		state.GetFires()[0].Render(sdl_renderer);
 	}
 
 	if (state.GetPlayer() != nullptr) {

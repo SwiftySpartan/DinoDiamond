@@ -6,6 +6,7 @@
 
 #include "controller.h"
 #include "diamond.h"
+#include "fire.h"
 #include "player.h"
 #include "renderer.h"
 
@@ -27,6 +28,7 @@ class Game {
 
 	std::vector<Parallax> backgrounds;
 	std::vector<Diamond> diamonds;
+	std::vector<Fire> fires;
 
   void Update(Mix_Chunk &diamond_sf, State &state);
 };

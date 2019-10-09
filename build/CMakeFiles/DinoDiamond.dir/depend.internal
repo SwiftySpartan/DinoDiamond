@@ -10,16 +10,20 @@ CMakeFiles/DinoDiamond.dir/src/controller.cpp.o
  /Users/andreww/Development/capstone/src/controller.cpp
  /Users/andreww/Development/capstone/src/controller.h
  /Users/andreww/Development/capstone/src/diamond.h
+ /Users/andreww/Development/capstone/src/fire.h
  /Users/andreww/Development/capstone/src/keys.h
  /Users/andreww/Development/capstone/src/parallax.h
  /Users/andreww/Development/capstone/src/player.h
  /Users/andreww/Development/capstone/src/state.h
 CMakeFiles/DinoDiamond.dir/src/diamond.cpp.o
  /Users/andreww/Development/capstone/src/diamond.cpp
+CMakeFiles/DinoDiamond.dir/src/fire.cpp.o
+ /Users/andreww/Development/capstone/src/fire.cpp
 CMakeFiles/DinoDiamond.dir/src/game.cpp.o
  /Users/andreww/Development/capstone/src/challenge.h
  /Users/andreww/Development/capstone/src/controller.h
  /Users/andreww/Development/capstone/src/diamond.h
+ /Users/andreww/Development/capstone/src/fire.h
  /Users/andreww/Development/capstone/src/game.cpp
  /Users/andreww/Development/capstone/src/game.h
  /Users/andreww/Development/capstone/src/keys.h
@@ -31,6 +35,7 @@ CMakeFiles/DinoDiamond.dir/src/main.cpp.o
  /Users/andreww/Development/capstone/src/challenge.h
  /Users/andreww/Development/capstone/src/controller.h
  /Users/andreww/Development/capstone/src/diamond.h
+ /Users/andreww/Development/capstone/src/fire.h
  /Users/andreww/Development/capstone/src/game.h
  /Users/andreww/Development/capstone/src/keys.h
  /Users/andreww/Development/capstone/src/main.cpp
@@ -49,6 +54,7 @@ CMakeFiles/DinoDiamond.dir/src/player.cpp.o
 CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o
  /Users/andreww/Development/capstone/src/challenge.h
  /Users/andreww/Development/capstone/src/diamond.h
+ /Users/andreww/Development/capstone/src/fire.h
  /Users/andreww/Development/capstone/src/keys.h
  /Users/andreww/Development/capstone/src/parallax.h
  /Users/andreww/Development/capstone/src/player.h
@@ -56,4 +62,11 @@ CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o
  /Users/andreww/Development/capstone/src/renderer.h
  /Users/andreww/Development/capstone/src/state.h
 CMakeFiles/DinoDiamond.dir/src/state.cpp.o
+ /Users/andreww/Development/capstone/src/challenge.h
+ /Users/andreww/Development/capstone/src/diamond.h
+ /Users/andreww/Development/capstone/src/fire.h
+ /Users/andreww/Development/capstone/src/keys.h
+ /Users/andreww/Development/capstone/src/parallax.h
+ /Users/andreww/Development/capstone/src/player.h
  /Users/andreww/Development/capstone/src/state.cpp
+ /Users/andreww/Development/capstone/src/state.h

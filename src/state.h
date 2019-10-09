@@ -1,7 +1,12 @@
 #ifndef STATE_H
 #define STATE_H
 
+#include <thread>
+#include <future>
+#include <chrono>
+
 #include "diamond.h"
+#include "fire.h"
 #include "player.h"
 #include "parallax.h"
 #include "keys.h"
@@ -9,74 +14,63 @@
 class State {
 	public:
 		State() {};
-		~State() {};
+		~State() {
+			for (size_t i = 0; i < threads.size(); i++) {
+				threads[i]->join();
+			}
+		};
+
+		void ForeverGenerateChallenges();
 
 		// Setters
-		void SetKeysPressed(KeysPressed p) {
-			this->key_KeysPressed = p;
-		}
+		void SetKeysPressed(KeysPressed p);
 
-		void SetPreviousKeysPressed(KeysPressed p) {
-			this->previous_key_KeysPressed = p;
-		}
+		void SetPreviousKeysPressed(KeysPressed p);
 
-		void SetPlayer(Player * p) {
-			this->player = p;
-		}
+		void SetPlayer(Player * p);
 
-		void SetDiamonds(std::vector<Diamond> * d) {
-			this->diamonds = d;
-		}
+		void SetDiamonds(std::vector<Diamond> * d);
 
-		void SetBackgrounds(std::vector<Parallax> * b) {
-			this->backgrounds = b;
-		}
+		void SetFires(std::vector<Fire> * f);
 
-		void SetRunningStatus(bool const &running) {
-			this->running = running;
-		}
+		void SetBackgrounds(std::vector<Parallax> * b);
 
-		void SetLevel(int l) {
-			this->level = l;
-		}
+		void SetRunningStatus(bool const &running);
+
+		void SetLevel(int l);
 
 		// Getters
-		KeysPressed GetKeysPressed() {
-			return this->key_KeysPressed;
-		}
+		KeysPressed GetKeysPressed();
 
-		KeysPressed GetPreviousKeysPressed() {
-			return this->previous_key_KeysPressed;
-		}
+		KeysPressed GetPreviousKeysPressed();
 
-		Player * GetPlayer() {
-			return this->player;
-		}
+		Player * GetPlayer();
 
-		std::vector<Diamond> & GetDiamonds() {
-			return *diamonds;
-		}
+		std::vector<Diamond> & GetDiamonds();
 
-		std::vector<Parallax> & GetBackgrounds() {
-			return *backgrounds;
-		}
+		std::vector<Fire> & GetFires();
 
-		bool GetRunningStatus() {
-			return this->running;
-		}
+		std::vector<Parallax> & GetBackgrounds();
 
-		int GetLevel() {
-			return this->level;
-		}
+		bool GetRunningStatus();
+
+		int GetLevel();
 
 	private:
+		void GenerateDiamonds(std::promise<std::vector<Diamond>> && promise);
+
 		Player * player;
 		std::vector<Diamond> * diamonds;
+		std::vector<Fire> * fires;
 		std::vector<Parallax> * backgrounds = nullptr;
 		int level{1};
 		bool running;
 		KeysPressed key_KeysPressed;
 		KeysPressed previous_key_KeysPressed;
+		std::vector<std::thread *> threads;
+
+    std::promise<std::vector<Diamond>> prms;
+    std::future<std::vector<Diamond>> ftr = prms.get_future();
 };
 
 #endif

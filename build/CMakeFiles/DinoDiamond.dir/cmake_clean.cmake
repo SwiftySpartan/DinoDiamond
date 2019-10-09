@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DinoDiamond.dir/src/challenge.cpp.o"
   "CMakeFiles/DinoDiamond.dir/src/controller.cpp.o"
   "CMakeFiles/DinoDiamond.dir/src/diamond.cpp.o"
+  "CMakeFiles/DinoDiamond.dir/src/fire.cpp.o"
   "CMakeFiles/DinoDiamond.dir/src/game.cpp.o"
   "CMakeFiles/DinoDiamond.dir/src/main.cpp.o"
   "CMakeFiles/DinoDiamond.dir/src/parallax.cpp.o"

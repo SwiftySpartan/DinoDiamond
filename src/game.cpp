@@ -17,6 +17,7 @@ Game::Game(std::size_t screen_width, std::size_t screen_height,
 	backgrounds.push_back(Parallax(screen_width, screen_height, 0.2));
 
 	diamonds.push_back(Diamond(50, screen_height * 0.69 + 30, 2.5));
+	fires.push_back(Fire(100, screen_height * 0.69 + 30, 2.5));
 }
 
 void Game::Run(Controller const &controller, Renderer &renderer,
@@ -35,11 +36,14 @@ void Game::Run(Controller const &controller, Renderer &renderer,
 
 	State state = State();
 
-	// state.SetPlayer(&player);
 	state.SetBackgrounds(&backgrounds);
 	state.SetPlayer(&player);
-	state.SetDiamonds(&diamonds);
+	state.SetFires(&fires);
 	state.SetRunningStatus(true);
+
+	state.SetDiamonds(&diamonds);
+
+	state.ForeverGenerateChallenges();
 
   while (state.GetRunningStatus()) {
     frame_start = SDL_GetTicks();
@@ -88,6 +92,10 @@ void Game::Update(Mix_Chunk &diamond_sf, State &state) {
 	}
 
   // update fires
+	for (size_t i = 0; i < state.GetFires().size(); i++) {
+		state.GetFires()[i].SetDirection(state.GetKeysPressed(), state.GetPreviousKeysPressed());
+		state.GetFires()[i].Update();
+	}
 
 	// update backgrounds
 	for (size_t i = 0; i < state.GetBackgrounds().size(); i++) {
@@ -96,6 +104,8 @@ void Game::Update(Mix_Chunk &diamond_sf, State &state) {
 	}
 
 	Detect(diamond_sf, state);
+
+	// diamonds.push_back(Diamond(50, state.GetPlayer()->y + 30, 2.5));
 }
 
 int Game::GetScore() const { return player.consume_score; }

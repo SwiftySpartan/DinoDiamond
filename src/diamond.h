@@ -11,6 +11,8 @@ class Diamond : public Challenge {
 		SetSurface(IMG_Load("../assets/diamond.png"));
 	};
 
+	// GenerateDiamondsForever() {};
+
  	private:
 };
 

@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/andreww/Development/capstone/src/challenge.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/challenge.cpp.o"
   "/Users/andreww/Development/capstone/src/controller.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/controller.cpp.o"
   "/Users/andreww/Development/capstone/src/diamond.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/diamond.cpp.o"
+  "/Users/andreww/Development/capstone/src/fire.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/fire.cpp.o"
   "/Users/andreww/Development/capstone/src/game.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/game.cpp.o"
   "/Users/andreww/Development/capstone/src/main.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/main.cpp.o"
   "/Users/andreww/Development/capstone/src/parallax.cpp" "/Users/andreww/Development/capstone/build/CMakeFiles/DinoDiamond.dir/src/parallax.cpp.o"

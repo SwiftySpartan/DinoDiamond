@@ -204,6 +204,33 @@ src/diamond.cpp.s:
 	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/diamond.cpp.s
 .PHONY : src/diamond.cpp.s
 
+src/fire.o: src/fire.cpp.o
+
+.PHONY : src/fire.o
+
+# target to build an object file
+src/fire.cpp.o:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/fire.cpp.o
+.PHONY : src/fire.cpp.o
+
+src/fire.i: src/fire.cpp.i
+
+.PHONY : src/fire.i
+
+# target to preprocess a source file
+src/fire.cpp.i:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/fire.cpp.i
+.PHONY : src/fire.cpp.i
+
+src/fire.s: src/fire.cpp.s
+
+.PHONY : src/fire.s
+
+# target to generate assembly for a file
+src/fire.cpp.s:
+	$(MAKE) -f CMakeFiles/DinoDiamond.dir/build.make CMakeFiles/DinoDiamond.dir/src/fire.cpp.s
+.PHONY : src/fire.cpp.s
+
 src/game.o: src/game.cpp.o
 
 .PHONY : src/game.o
@@ -384,6 +411,9 @@ help:
 	@echo "... src/diamond.o"
 	@echo "... src/diamond.i"
 	@echo "... src/diamond.s"
+	@echo "... src/fire.o"
+	@echo "... src/fire.i"
+	@echo "... src/fire.s"
 	@echo "... src/game.o"
 	@echo "... src/game.i"
 	@echo "... src/game.s"

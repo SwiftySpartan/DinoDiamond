@@ -72,6 +72,7 @@
     "memory_resource": "cpp",
     "cinttypes": "cpp",
     "__tree": "cpp",
-    "map": "cpp"
+    "map": "cpp",
+    "future": "cpp"
   }
 }

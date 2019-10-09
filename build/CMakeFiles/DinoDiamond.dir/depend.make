@@ -9,6 +9,7 @@ CMakeFiles/DinoDiamond.dir/src/controller.cpp.o: ../src/challenge.h
 CMakeFiles/DinoDiamond.dir/src/controller.cpp.o: ../src/controller.cpp
 CMakeFiles/DinoDiamond.dir/src/controller.cpp.o: ../src/controller.h
 CMakeFiles/DinoDiamond.dir/src/controller.cpp.o: ../src/diamond.h
+CMakeFiles/DinoDiamond.dir/src/controller.cpp.o: ../src/fire.h
 CMakeFiles/DinoDiamond.dir/src/controller.cpp.o: ../src/keys.h
 CMakeFiles/DinoDiamond.dir/src/controller.cpp.o: ../src/parallax.h
 CMakeFiles/DinoDiamond.dir/src/controller.cpp.o: ../src/player.h
@@ -16,9 +17,12 @@ CMakeFiles/DinoDiamond.dir/src/controller.cpp.o: ../src/state.h
 
 CMakeFiles/DinoDiamond.dir/src/diamond.cpp.o: ../src/diamond.cpp
 
+CMakeFiles/DinoDiamond.dir/src/fire.cpp.o: ../src/fire.cpp
+
 CMakeFiles/DinoDiamond.dir/src/game.cpp.o: ../src/challenge.h
 CMakeFiles/DinoDiamond.dir/src/game.cpp.o: ../src/controller.h
 CMakeFiles/DinoDiamond.dir/src/game.cpp.o: ../src/diamond.h
+CMakeFiles/DinoDiamond.dir/src/game.cpp.o: ../src/fire.h
 CMakeFiles/DinoDiamond.dir/src/game.cpp.o: ../src/game.cpp
 CMakeFiles/DinoDiamond.dir/src/game.cpp.o: ../src/game.h
 CMakeFiles/DinoDiamond.dir/src/game.cpp.o: ../src/keys.h
@@ -30,6 +34,7 @@ CMakeFiles/DinoDiamond.dir/src/game.cpp.o: ../src/state.h
 CMakeFiles/DinoDiamond.dir/src/main.cpp.o: ../src/challenge.h
 CMakeFiles/DinoDiamond.dir/src/main.cpp.o: ../src/controller.h
 CMakeFiles/DinoDiamond.dir/src/main.cpp.o: ../src/diamond.h
+CMakeFiles/DinoDiamond.dir/src/main.cpp.o: ../src/fire.h
 CMakeFiles/DinoDiamond.dir/src/main.cpp.o: ../src/game.h
 CMakeFiles/DinoDiamond.dir/src/main.cpp.o: ../src/keys.h
 CMakeFiles/DinoDiamond.dir/src/main.cpp.o: ../src/main.cpp
@@ -48,6 +53,7 @@ CMakeFiles/DinoDiamond.dir/src/player.cpp.o: ../src/player.h
 
 CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o: ../src/challenge.h
 CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o: ../src/diamond.h
+CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o: ../src/fire.h
 CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o: ../src/keys.h
 CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o: ../src/parallax.h
 CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o: ../src/player.h
@@ -55,5 +61,12 @@ CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o: ../src/renderer.cpp
 CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o: ../src/renderer.h
 CMakeFiles/DinoDiamond.dir/src/renderer.cpp.o: ../src/state.h
 
+CMakeFiles/DinoDiamond.dir/src/state.cpp.o: ../src/challenge.h
+CMakeFiles/DinoDiamond.dir/src/state.cpp.o: ../src/diamond.h
+CMakeFiles/DinoDiamond.dir/src/state.cpp.o: ../src/fire.h
+CMakeFiles/DinoDiamond.dir/src/state.cpp.o: ../src/keys.h
+CMakeFiles/DinoDiamond.dir/src/state.cpp.o: ../src/parallax.h
+CMakeFiles/DinoDiamond.dir/src/state.cpp.o: ../src/player.h
 CMakeFiles/DinoDiamond.dir/src/state.cpp.o: ../src/state.cpp
+CMakeFiles/DinoDiamond.dir/src/state.cpp.o: ../src/state.h
 
